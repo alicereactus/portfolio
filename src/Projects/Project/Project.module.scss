@@ -30,9 +30,8 @@
             }
         }
         .links {
-            display: none;
             position: absolute;
-            top: 50%;
+            top: 88%;
             left: 50%;
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
@@ -54,14 +53,6 @@
                 }
             }
         }
-        @media screen and (max-width: 450px) {
-        & .links{
-            display: block;
-        }
-    }
-    &:hover .links{
-        display: block;
-    }
 }
     .projectInfo {
         margin-top: 10px;
