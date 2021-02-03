@@ -1,0 +1,23 @@
+@import '../common/styles/sass/variables.scss';
+
+.projectsBlock {
+    display: flex;
+    min-height: 100vh;
+    background-color: $bgColor;
+    align-items: center;
+    .projectsContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        .projects {
+            width: 80%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }   
+    }
+}
+

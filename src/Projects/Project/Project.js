@@ -1,17 +1,23 @@
 import React from 'react'
 
-import style from './Project.module.css';
+import style from './Project.module.scss';
 
 function Project(props) {
     return (
         <div className={style.project}>
             <div className={style.imgContainer}>
-                <a href='#'>Посмотреть</a>
+                <img src={props.imageUrl} alt='projectImg' />
+                <div className={style.links}>
+                    <a href={props.repoLink} target="_blank">REPO</a>
+                    <a href={props.demoLink} target="_blank">DEMO</a>
+                </div>
             </div>
-            <span className={style.title}>{props.title}</span>
-            <span className={style.description}>
-                {props.description}
-            </span>
+            <div className={style.projectInfo}>
+                <h3 className={style.projectTitle}>{props.title}</h3>
+                <p className={style.description}>
+                    {props.description}
+                </p>
+            </div>
         </div>
     );
 }

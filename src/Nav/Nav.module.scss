@@ -1,0 +1,17 @@
+@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 380px;
+    margin: 5px;
+    & a {
+        text-decoration: none;
+        margin: 2px;
+        @include text(('Josefin Sans', sans-serif), 25px, 1.3);
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+}

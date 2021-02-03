@@ -1,19 +1,40 @@
 import React from 'react'
 
-import style from './Main.module.css';
+import Title from '../common/components/Title/Title'
+import Links from '../common/components/Links/Links';
+
+import style from './Main.module.scss';
 import styleContainer from '../common/styles/Container.module.css'
+
+import Photo from '../assets/image/Photo.png'
 
 function Main() {
   return (
     <div className={style.mainBlock}>
-        <div className={styleContainer.container}>
-        <div className={style.greeting}>
-            <span>Hi there!</span>
-            <h1>I am Alesia Haidukevich</h1>
-            <p>Frontend developer</p>
+      <div className={`${styleContainer.container} ${style.mainContainer} `}>
+        <Title title='Main' />
+        <div className={style.aboutMe}>
+          <div className={style.greeting}>
+            <p>Hi there!</p>
+            <h3>I am Alesia Haidukevich.</h3>
+            <h4>Frontend developer</h4>
+            <p>I'm responsible, motivated, easy-to-learn React Frontend Developer open to work now.</p>
+            <p>I like programming because it's interesting for me to create something, to make user interface alive and friendly.
+          I like to study and make my code better, also I like to share experience and learn from other developers.</p>
+          </div>
+          <div className={style.photoContainer}>
+            <img src={Photo} />
+          </div>
         </div>
-        <div className={style.photo}></div>
+
+        <div className={style.contacts}>
+          <h4>
+            CONTACT WITH ME
+          </h4>
+          <Links />
         </div>
+
+      </div>
     </div>
   );
 }

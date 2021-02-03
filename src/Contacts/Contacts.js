@@ -13,7 +13,7 @@ function Contacts() {
           <textarea placeholder='Your message' />
         </form>
         <div className={style.btnSend}>
-          <button>Send</button>
+          <button type='submit'>Send</button>
         </div>
       </div>
     </div>

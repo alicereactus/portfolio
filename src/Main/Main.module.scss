@@ -1,0 +1,47 @@
+@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
+
+.mainBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 92vh;
+    background-color: $bgColor;
+    .mainContainer {
+    .aboutMe {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .greeting {
+            width: 390px;
+            background-color: $bgSecondColor;
+            padding: 0 10px 0 10px;
+            @include text(('Josefin Sans', sans-serif), 15px, 1.2);
+            border: 1px solid wheat;
+            text-align: justify;
+        }
+        .photoContainer {
+            width: 340px;
+            margin-top: 5px;
+            & img {
+                width: 100%;
+                height: 85%;
+                border: 1px solid wheat;
+            }
+        }
+    }
+    .contacts {
+        width: 400px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        background-color: $bgSecondColor;
+        @include text(('Josefin Sans', sans-serif), 20px, 1.2);
+        text-align: center;
+        border: 1px solid wheat;
+    }
+}
+}

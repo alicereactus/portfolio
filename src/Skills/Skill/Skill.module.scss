@@ -1,0 +1,33 @@
+@import '../../common/styles/sass/variables.scss';
+@import '../../common/styles/sass/mixins.scss';
+
+.skillContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 6px;
+    box-sizing: border-box;
+
+    background-color: $bgColor;
+    text-align: center;
+    border: 1px solid wheat;
+    .skill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .title {
+            @include text(('Josefin Sans', sans-serif), 20px, 1.2);
+            font-weight: 300;
+            margin-left: 5px;
+        }
+        & img {
+            height: 100%;
+            width: 25%;
+        }
+    }
+}
+
