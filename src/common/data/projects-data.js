@@ -41,7 +41,7 @@ export const projects = [
         title: 'Calculator',
         description: 'Technology stack: HTML, CSS, JS.',
         imageUrl: calculatorImage,
-        repoLink: '',
+        repoLink: 'https://github.com/alicereactus/project-calculator',
         demoLink: ''
     }
 ]
