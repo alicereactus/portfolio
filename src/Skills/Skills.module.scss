@@ -2,9 +2,9 @@
 
 .skillsBlock {
     display: flex;
-    min-height: 100vh;
-    background-color: $bgColor;
-    align-items: flex-start;
+    min-height: 60vh;
+    background-color: $bgSecondColor;
+    align-items: center;
     .skillsContainer {
         flex-direction: column;
         align-items: center;

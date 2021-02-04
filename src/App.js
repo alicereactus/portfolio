@@ -10,19 +10,22 @@ import Footer from './Footer/Footer';
 import './App.css';
 
 function App() {
-  const location = useLocation()
+  // const location = useLocation()
 
   return (
     <div className='App'>
         <Header />
-        <Switch location={location} key={location.pathname}>
+        <Main />
+        <Skills />
+        <Projects />
+        {/* <Switch location={location} key={location.pathname}>
           <Route path='/main'
             exact component={Main} />
           <Route path='/skills'
             exact component={Skills} />
           <Route path='/projects'
             exact component={Projects} />
-        </Switch>
+        </Switch> */}
         {/* <Contacts /> */}
         <Footer />
       </div>
