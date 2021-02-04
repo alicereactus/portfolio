@@ -20,7 +20,7 @@
             width: 390px;
             background-color: $bgSecondColor;
             padding: 0 10px 0 10px;
-            @include text(('Josefin Sans', sans-serif), 15px, 1.2);
+            @include text(('Josefin Sans', sans-serif), 18px, 1.2);
             border: 1px solid wheat;
             text-align: justify;
         }
@@ -29,7 +29,7 @@
             margin-top: 5px;
             & img {
                 width: 100%;
-                height: 85%;
+                height: 90%;
                 border: 1px solid wheat;
             }
         }

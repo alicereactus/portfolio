@@ -29,7 +29,7 @@ function Main() {
 
         <div className={style.contacts}>
           <h4>
-            CONTACT WITH ME
+            CONTACT ME
           </h4>
           <Links />
         </div>
