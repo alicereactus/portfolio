@@ -12,7 +12,7 @@ function Main() {
   return (
     <div className={style.mainBlock}>
       <div className={`${styleContainer.container} ${style.mainContainer} `}>
-        <Title title='Main' />
+        <Title title='main' />
         <div className={style.aboutMe}>
           <div className={style.greeting}>
             <p>Hi there!</p>

@@ -11,7 +11,7 @@ function Skills() {
   return (
     <div className={style.skillsBlock}>
       <div className={`${styleContainer.container} ${style.skillsContainer} `}>
-        <Title title='Skills' />
+        <Title title='skills' />
         <div className={style.skills}>
           {
             skills.map(s => <Skill
