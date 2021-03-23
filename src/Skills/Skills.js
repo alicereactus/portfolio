@@ -1,4 +1,5 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade'
 
 import style from './Skills.module.scss';
 import styleContainer from '../common/styles/Container.module.css'
@@ -9,7 +10,7 @@ import Title from '../common/components/Title/Title';
 
 function Skills() {
   return (
-    <div className={style.skillsBlock}>
+    <div className={style.skillsBlock} id='skillsBlock'>
       <div className={`${styleContainer.container} ${style.skillsContainer} `}>
         <Title title='skills' />
         <div className={style.skills}>

@@ -8,7 +8,7 @@ function Project(props) {
             <div className={style.imgContainer}>
                 <img src={props.imageUrl} alt='projectImg' />
                 <div className={style.links}>
-                    <a href={props.repoLink} target="_blank">REPO</a>
+                    <a href={props.repoLink} target="_blank">CODE</a>
                     <a href={props.demoLink} target="_blank">DEMO</a>
                 </div>
             </div>
